@@ -6,7 +6,7 @@ import java.net.http.HttpResponse;
 
 public class HPMS_Portal {
 	
-	public static HttpRequest Getter() {
+	public static HttpRequest Get() {
 		HttpURLConnection connection;
 		HttpClient client = HttpClient.newHttpClient();
 		HttpRequest request   = HttpRequest.newBuilder().uri(URI.create("http://happypets-1867210382.us-east-1.elb.amazonaws.com/api/patients")).build();
@@ -23,7 +23,7 @@ public class HPMS_Portal {
 	}
 	
 	public static void main(String[]Args) {
-		System.out.println(Getter());
+		System.out.println(Get());
 		
 		
 	}
