@@ -8,7 +8,7 @@ public class HPMS_Billing {
 
 	
 // public HTTP Call method  
-	public static HttpRequest Getter() {
+	public static HttpRequest Get() {
 		HttpURLConnection connection;
 		HttpClient client = HttpClient.newHttpClient();
 		HttpRequest request   = HttpRequest.newBuilder().uri(URI.create("http://happypets-1867210382.us-east-1.elb.amazonaws.com/api/billing")).build();
@@ -31,7 +31,7 @@ public class HPMS_Billing {
 		
 	
 	public static void main(String[]args) {
-		System.out.println(Getter());
+		System.out.println(Get());
 		
 		
 		
